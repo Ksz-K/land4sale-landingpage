@@ -1,221 +1,239 @@
-* {
-    box-sizing: border-box;
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("digital-7.ttf");
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
+* {
+  box-sizing: border-box;
+}
+
+.digital-clock {
+  font-family: "digital-clock-font";
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    position: relative;
+  font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 nav a img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .width-limit {
-    width: 100%;
-    max-width: 1600px;
+  width: 100%;
+  max-width: 1600px;
 }
 
 .transparent {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background-color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    padding-top: .8rem;
+  color: #fff;
+  padding-top: 0.8rem;
 }
 
 .navbar-nav li {
-    padding-right: .7rem;
+  padding-right: 0.7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #1ebba3;
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
 }
 
 .caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .caption::before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-image: url("http://kszk.vot.pl/okrzeszynS.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("http://kszk.vot.pl/okrzeszynS.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .caption h1 {
-    font-size: 3.8rem;
-    font-weight: 700;
-    letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem #000;
-    padding-bottom: 1rem;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem #000;
+  padding-bottom: 1rem;
 }
 
 .caption h3 {
-    font-size: 2rem;
-    text-shadow: .1rem .1rem .5rem #000;
-    padding-bottom: 1.6rem;
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem #000;
+  padding-bottom: 1.6rem;
 }
 
-.caption h3>small {
-    text-transform: capitalize;
+.caption h3 > small {
+  text-transform: capitalize;
 }
 
 .btn-lg {
-    border-width: medium;
-    border-radius: 10;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
+  border-width: medium;
+  border-radius: 10;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
 }
 
 .bg-blue {
-    background-image: repeating-linear-gradient(to bottom right, rgb(0, 196, 244) 0%, rgb(3, 96, 120) 100%);
-    width: 100%;
+  background-image: repeating-linear-gradient(to bottom right, rgb(0, 196, 244) 0%, rgb(3, 96, 120) 100%);
+  width: 100%;
 }
 
 figure {
-    margin-top: 1rem;
-    text-align: center;
-    color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
 }
 
 figure img {
-    height: 150px;
-    width: 150px;
+  height: 150px;
+  width: 150px;
 }
 
 figure img:hover {
-    opacity: 0.7;
-    cursor: pointer;
-    transform: scale(.98)
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(0.98);
 }
 
 .carousel-inner img {
-    width: 100vw;
-    height: calc(100vh - 76px);
+  width: 100vw;
+  height: calc(100vh - 76px);
 }
 
 .content {
-    color: #fff;
-    min-height: 650px;
-    text-align: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 1rem;
+  color: #fff;
+  min-height: 650px;
+  width: 100vw;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.black {
+  color: #000 !important;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .bg1 {
-    background-color: #fff;
-    background-image: url("http://kszk.vot.pl/wwa2.jpg");
+  background-color: #fff;
+  background-image: url("http://kszk.vot.pl/wwa2.jpg");
+  opacity: 0.77;
 }
 
-tr, td {
-    text-align: left;
-    color: #023b02;
-    font-weight: 700;
-    font-size: 1.5rem;
+tr,
+td {
+  text-align: left;
+  color: #023b02;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
-.fixed-background h3, .fixed-background p {
-    color: #010211;
+.fixed-background h3,
+.fixed-background p {
+  color: #010211;
 }
 
 .modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .mr-3 {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .media-left img {
-    height: 120px;
-    width: 120px;
-    margin-top: 1.2rem;
+  height: 120px;
+  width: 120px;
+  margin-top: 1.2rem;
 }
 
 .media-body {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .narrow {
-    width: 50%;
-    margin: 1.5rem auto;
-    padding-top: 2rem;
+  width: 50%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
 }
 
 .tab-pane {
-    padding: 10px;
+  padding: 10px;
 }
 
 .dojazd a {
-    color: #fff;
-    padding: 1rem 1rem 1rem 2rem;
-    font-size: 1.5rem;
-    text-shadow: 0px 16px 20px #000000;
+  color: #fff;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 1.5rem;
+  text-shadow: 0px 16px 20px #000000;
 }
 
 .route {
-    width: 100%;
-    margin-bottom: 2rem;
-    background: #333333;
+  width: 100%;
+  margin-bottom: 2rem;
+  background: #333333;
 }
 
 .impressed-me {
-    color: #FFFFFF;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  color: #ffffff;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
+    #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
 }
 
 video {
-    width: 90%;
-    max-width: 1200px;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .width-correction {
-    max-width: 150px;
+  max-width: 150px;
 }
-
-@media (min-width:797px) {
-    .width-correction {
-        max-width: none;
-    }
