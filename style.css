@@ -12,8 +12,8 @@
   font-size: 1.3rem;
   font-weight: bolder;
 }
-html,
-body {
+
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -53,8 +53,7 @@ nav a img {
   padding-right: 0.7rem;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
   color: #1ebba3;
 }
 
@@ -74,7 +73,7 @@ nav a img {
   width: 100%;
   height: 100%;
   content: "";
-  background-image: url("http://kszk.vot.pl/okrzeszynS.jpg");
+  background-image: url("https://kszk.vot.pl/okrzeszynS.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -98,7 +97,7 @@ nav a img {
   padding-bottom: 1.6rem;
 }
 
-.caption h3 > small {
+.caption h3>small {
   text-transform: capitalize;
 }
 
@@ -155,20 +154,32 @@ figure img:hover {
 
 .bg1 {
   background-color: #fff;
-  background-image: url("http://kszk.vot.pl/wwa2.jpg");
-  opacity: 0.77;
+  background-image: url("https://kszk.vot.pl/wwa2.jpg");
+  opacity: 0.9;
 }
 
-tr,
-td {
+.opis {
+  margin: 0 15vw;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.opis2 {
+  margin: 0 15vw;
+  box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #a31925, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+tr, td {
   text-align: left;
   color: #023b02;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-.fixed-background h3,
-.fixed-background p {
+.fixed-background h3, .fixed-background p {
   color: #010211;
 }
 
@@ -225,8 +236,7 @@ td {
 
 .impressed-me {
   color: #ffffff;
-  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
-    #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
 }
 
 video {
