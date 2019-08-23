@@ -253,3 +253,51 @@ video {
 .width-correction {
   max-width: 150px;
 }
+
+.img-responsive {
+  margin-left: 30vw;
+  margin-right: 30vw;
+  max-width: 40vw;
+}
+
+#galeria2 {
+  background-image: repeating-linear-gradient(
+    to bottom right,
+    rgb(83, 91, 94) 0%,
+    rgb(254, 254, 254) 25%,
+    rgb(74, 81, 84) 50%,
+    rgb(253, 253, 253) 75%,
+    rgb(83, 91, 94) 100%
+  );
+}
+
+.carousel-caption.colorGreen {
+  color: #0f0;
+}
+
+.colorGreen > h2 {
+  transform: rotate(-30deg) translate(125px, -250px);
+}
+
+.carousel-control-prev-icon2,
+.carousel-control-next-icon2 {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon2:after {
+  content: ">";
+  font-size: 55px;
+  color: #00f;
+}
+
+.carousel-control-prev-icon2:after {
+  content: "<";
+  font-size: 55px;
+  color: #00f;
+}
