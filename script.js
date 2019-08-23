@@ -21,3 +21,14 @@ function windowpop(url, width, height) {
     //Open the window.
     window.open(url, "Window2", "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no");
 }
+
+document.querySelector('form').addEventListener('submit', function (event) {
+
+
+    var emailAddressInput = event.target.querySelector('input[name="email"]');
+
+    if (emailAddressInput.value.indexOf('@') > 0) {
+        print('Dziękuję. Skontaktuje się wkrótce.');
+    }
+
+})
