@@ -14,7 +14,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+    integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
 </head>
 
 <body data-spy="scroll" data-offset="10" data-target="#navbarResponsive">
@@ -293,7 +294,8 @@
         </div>
       </div>
       <div class="row">
-        <button class="route" data-toggle="collapse" data-target="#route"> <span class="impressed-me">Jak dotrzeć do
+        <button class="route mb-0" data-toggle="collapse" data-target="#route"> <span class="impressed-me">Jak dotrzeć
+            do
             Okrzeszyna? <br>Click me</span>
         </button>
         <div id="route" class="col-12 collapse">
@@ -329,6 +331,16 @@
               </video>
             </div>
           </div>
+        </div>
+
+        <div class="col-12 m-0 p-0 position-relative">
+          <div class="go2okrzeszyn">
+            <h2><a href="https://www.google.com/maps/dir//52.126999,21.139313/@52.126999,21.139313,16z?hl=pl"
+                target="_blank" class="badge badge-success"> Jak dojechać ? <span><i
+                    class="fas fa-route"></i></span></a>
+            </h2>
+          </div>
+          <div id="map" class="m-0 p-0"></div>
         </div>
 
         <div class="col-12">
@@ -540,7 +552,6 @@
                 <p>w sprawie miejscowego planu zagospodarowania przestrzennego sołectwa Okrzeszyn</p>
               </div>
             </div>
-
             <div class="carousel-item">
               <img src="https://okrzeszyn.waw.pl/img/5.jpg" alt="Konstancin-Jeziorna">
               <div class="carousel-caption">
@@ -556,8 +567,6 @@
             <span class="carousel-control-next-icon2"></span>
           </a>
         </div>
-
-
         <div class="row justify-content-around">
           <div class="media col-sm-12 col-md-6">
             <div class="media-left">
@@ -614,6 +623,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-j3YPb9Zh3VJF9rSwXSuOO3oEH8njOmw&callback=initMap">
+    </script>
   <script src="script.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
