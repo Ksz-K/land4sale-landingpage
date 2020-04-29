@@ -1,2 +1,2 @@
-# Example of landing page for Real Property offer
-## Created with Vanilla JS and Bootsrap 4 
+# Example of landing page for Real Property Offer
+## Created with Vanilla JS and Bootstrap 4/HTML 5 
